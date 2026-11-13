@@ -1,5 +1,0 @@
-[
-  {"name": "R1",  "type": "cisco_ios", "host": "10.7.1.1", "username": "admin"},
-  {"name": "SW1", "type": "cisco_ios", "host": "10.7.1.2", "username": "admin"},
-  {"name": "FW1", "type": "fortinet",  "host": "10.7.2.1", "username": "admin"}
-]
