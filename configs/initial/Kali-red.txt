@@ -1,0 +1,6 @@
+# Kali Linux (estacion de administracion) - red del laboratorio
+systemctl stop NetworkManager
+ip addr add 10.7.1.10/24 dev eth1
+ip link set eth1 up
+ip route add default via 10.7.1.1
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
