@@ -383,7 +383,9 @@ Los informes completos están en [`reports/before`](reports/before) y [`reports/
   <p><i>Figura 18 · R1 en Quiet-Mode tras intentos fallidos.</i></p>
 </div>
 
-Las configuraciones finales exportadas están en [`/configs/running-config`](/configs/running-config).
+
+[configs/running-config](https://github.com/LisbethdaianGomezSoto/CIS--HARDENING/tree/main/configs/running-config)
+
 
 ## 18. Conclusiones
 
