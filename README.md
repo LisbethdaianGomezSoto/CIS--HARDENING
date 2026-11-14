@@ -435,9 +435,10 @@ Lista completa en [docs/05-referencias.md](docs/05-referencias.md).
 
 <p align="center">
   <a href="#-hardening-de-redes-con-cis-benchmark" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/⬆_Volver_al_Inicio-ff00ff?style=for-the-badge" alt="Volver al inicio">
+ 
+<p align="center">
+  <a href="#top" style="text-decoration: none;">
+   <img src="https://img.shields.io/badge/⬆_Volver_al_Inicio-ff00ff?style=for-the-badge" alt="Volver al inicio">
   </a>
 </p>
-
-
 
