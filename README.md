@@ -419,3 +419,25 @@ Las configuraciones finales exportadas están en [configs/running-config](https:
 - Netmiko: https://github.com/ktbyers/netmiko · GNS3: https://www.gns3.com · Nmap: https://nmap.org
 
 Lista completa en [docs/05-referencias.md](docs/05-referencias.md).
+
+
+<br>
+<hr style="border: 1px solid #30363d; margin-bottom: 20px;">
+
+<p align="center" style="color: #8b949e; font-size: 14px;">
+  <b>Autora:</b> Lisbeth Gomez · <b>Matrícula:</b> 2025-0701<br>
+  <i>Proyecto desarrollado para el laboratorio de Seguridad en Redes.</i>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/STATUS-COMPLETADO_100%25-00e5ff?style=for-the-badge&logo=checkmarx&logoColor=black" alt="Status">
+</p>
+
+<p align="center">
+  <a href="#-hardening-de-redes-con-cis-benchmark" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/⬆_Volver_al_Inicio-ff00ff?style=for-the-badge" alt="Volver al inicio">
+  </a>
+</p>
+
+
+
