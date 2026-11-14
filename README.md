@@ -308,7 +308,7 @@ La auditoría inicial de R1 y SW1 evaluó 12 controles; el estado final incluye 
 </div>
 
 
-Los informes completos están en [`reports/before`](reports/before) y [`reports/after`](reports/after).
+📊 **[Ver Reporte Visual del Hardening (HTML)](/reports/after/reporte-visual-final.html)**
 
 ## 17. Evidencias de las pruebas
 
