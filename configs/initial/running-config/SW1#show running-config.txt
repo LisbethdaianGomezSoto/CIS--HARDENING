@@ -1,0 +1,77 @@
+SW1#show running-config
+Building configuration...
+
+Current configuration : 1345 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname SW1
+!
+boot-start-marker
+boot-end-marker
+!
+logging buffered 16384 informational
+enable secret 5 $1$CWWX$AxaM9/GtcmN9x2Bonfdow0
+!
+no aaa new-model
+!
+no ip source-route
+no ip icmp rate-limit unreachable
+!
+!
+no ip domain lookup
+ip domain name lab.local
+login block-for 120 attempts 3 within 60
+!
+!
+!
+!
+username admin privilege 15 secret 5 $1$HWX/$lKIItp7C/kABOYX8stHJV0
+!
+!
+ip ssh version 2
+!
+!
+!
+!
+interface FastEthernet0/1
+ description hacia R1
+ switchport mode access
+!
+interface FastEthernet0/2
+ description hacia Kali
+ switchport mode access
+!
+interface Vlan1
+ ip address 10.7.1.2 255.255.255.0
+ no shutdown
+!
+ip default-gateway 10.7.1.1
+!
+no ip http server
+no ip http secure-server
+!
+no cdp run
+!
+!
+!
+banner login ^CAcceso restringido. Lisbeth Gomez 2025-0701. Actividad monitoreada.^C
+!
+line con 0
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+line aux 0
+ exec-timeout 5 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ exec-timeout 5 0
+ login local
+ transport input ssh
+!
+!
+end
