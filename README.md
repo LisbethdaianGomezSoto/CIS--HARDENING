@@ -133,11 +133,15 @@ Procedimiento paso a paso en [docs/04-procedimiento-y-pruebas.md](docs/04-proced
 
 ## 9. Conexión inicial de los equipos
 
-![Figura 02 · Conectividad desde Kali](images/capturas/02-conectividad-kali.png)
-*Figura 02 · Conectividad desde Kali hacia R1, SW1, FW1 e Internet.*
+<div align="center">
+  <img src="images/capturas/02-conectividad-kali.png" alt="Conectividad desde Kali" width="700">
+  <p><i>Figura 02 · Conectividad desde Kali hacia R1, SW1, FW1 e Internet.</i></p>
+</div>
 
-![Figura 03 · Acceso SSH a FW1 con banner](images/capturas/03-ssh-fortigate-banner.png)
-*Figura 03 · Acceso SSH a FW1 mostrando el banner de advertencia.*
+<div align="center">
+  <img src="images/capturas/03-ssh-fortigate-banner.png" alt="Acceso SSH a FW1 con banner" width="700">
+  <p><i>Figura 03 · Acceso SSH a FW1 mostrando el banner de advertencia.</i></p>
+</div>
 
 Las configuraciones iniciales están en [`configs/initial/`](configs/initial/).
 
@@ -229,11 +233,15 @@ CIS-Hardening-GNS3/
 
 ## 14. Auditoría inicial
 
-![Figura 04 · Auditoría inicial de R1 y SW1](images/capturas/04-auditoria-inicial-cisco.png)
-*Figura 04 · Informe de la auditoría inicial de R1 y SW1.*
+<div align="center">
+  <img src="images/capturas/04-auditoria-inicial-cisco.png" alt="Auditoría inicial de R1 y SW1" width="700">
+  <p><i>Figura 04 · Informe de la auditoría inicial de R1 y SW1.</i></p>
+</div>
 
-![Figura 05 · Auditoría inicial de FW1](images/capturas/05-auditoria-inicial-fortigate.png)
-*Figura 05 · Informe de la auditoría inicial de FW1.*
+<div align="center">
+  <img src="images/capturas/05-auditoria-inicial-fortigate.png" alt="Auditoría inicial de FW1" width="700">
+  <p><i>Figura 05 · Informe de la auditoría inicial de FW1.</i></p>
+</div>
 
 ## 15. Resultados de las auditorías
 
@@ -247,17 +255,25 @@ Cumplimiento de los **controles seleccionados** (no de todo el benchmark):
 
 La prueba de puertos con nmap mostró el puerto 443 abierto en SW1, lo que llevó a incorporar el control **H13** (HTTPS apagado). Con los 13 controles, SW1 pasó de 12/13 a 13/13 y R1 se mantuvo en 13/13.
 
-![Figura 06 · Ejecución del hardening](images/capturas/06-ejecucion-apply.png)
-*Figura 06 · Ejecución de `--apply`.*
+<div align="center">
+  <img src="images/capturas/06-ejecucion-apply.png" alt="Ejecución del hardening" width="700">
+  <p><i>Figura 06 · Ejecución de <code>--apply</code>.</i></p>
+</div>
 
-![Figura 07 · Informe de aplicación en R1 y SW1](images/capturas/07-informe-apply-cisco.png)
-*Figura 07 · Informe de `--apply` en R1 y SW1.*
+<div align="center">
+  <img src="images/capturas/07-informe-apply-cisco.png" alt="Informe de aplicación en R1 y SW1" width="700">
+  <p><i>Figura 07 · Informe de <code>--apply</code> en R1 y SW1.</i></p>
+</div>
 
-![Figura 08 · Informe de aplicación del control H13](images/capturas/08-informe-apply-sw1-h13.png)
-*Figura 08 · Informe de `--apply` con el control H13.*
+<div align="center">
+  <img src="images/capturas/08-informe-apply-sw1-h13.png" alt="Informe de aplicación del control H13" width="700">
+  <p><i>Figura 08 · Informe de <code>--apply</code> con el control H13.</i></p>
+</div>
 
-![Figura 09 · Informe de aplicación en FW1](images/capturas/09-informe-apply-fortigate.png)
-*Figura 09 · Informe de `--apply` en FW1.*
+<div align="center">
+  <img src="images/capturas/09-informe-apply-fortigate.png" alt="Informe de aplicación en FW1" width="700">
+  <p><i>Figura 09 · Informe de <code>--apply</code> en FW1.</i></p>
+</div>
 
 ## 16. Comparación antes y después
 
@@ -269,8 +285,13 @@ La prueba de puertos con nmap mostró el puerto 443 abierto en SW1, lo que llev�
 
 La auditoría inicial de R1 y SW1 evaluó 12 controles; el estado final incluye los 13 (se sumó H13).
 
-![Figura 10 · Auditoría final](images/capturas/10-auditoria-final.png)
-*Figura 10 · Auditoría posterior al hardening.*
+<br>
+
+<div align="center">
+  <img src="images/capturas/10-auditoria-final.png" alt="Auditoría Final" width="700">
+  <p><i>Figura 10 · Auditoría posterior al hardening.</i></p>
+</div>
+
 
 Los informes completos están en [`reports/before`](reports/before) y [`reports/after`](reports/after).
 
@@ -287,29 +308,65 @@ Los informes completos están en [`reports/before`](reports/before) y [`reports/
 | 7 | `show logging` en R1 | Eventos con fecha y hora | H10, H12 | Fig. 17 |
 | 8 | Tres contraseñas incorrectas y `show login` | Quiet-Mode activo | H11 | Fig. 18 |
 
-![Figura 11 · nmap](images/capturas/11-nmap-puertos.png)
-*Figura 11 · Puertos abiertos en R1 y SW1.*
+## 17. Evidencias de las pruebas
 
-![Figura 12 · Telnet rechazado](images/capturas/12-telnet-rechazado.png)
-*Figura 12 · Telnet rechazado por R1.*
+| # | Prueba | Resultado | Control | Evidencia |
+|---|---|---|---|---|
+| 1 | `nmap -p 22,23,80,443 10.7.1.1 10.7.1.2` | Solo el puerto 22 abierto | H03, H05, H13 | Fig. 11 |
+| 2 | `telnet 10.7.1.1` | Conexión rehusada | H05 | Fig. 12 |
+| 3 | `show ip ssh` y `show cdp` en R1 | SSH versión 2.0 y CDP desactivado | H04, H08 | Fig. 13 |
+| 4 | `curl -I https://example.com` y `nc -vz -w 3 1.1.1.1 22` | HTTPS permitido; SSH hacia Internet sin respuesta | Política de FW1 | Fig. 14 |
+| 5 | Cambio de contraseña de FW1 | Se exige la política de contraseñas | F07, F08 | Fig. 15 |
+| 6 | Bloqueo y hosts de confianza en FW1 | `lockout-duration 900` y `trusthost` configurados | F05, F06, F09 | Fig. 16 |
+| 7 | `show logging` en R1 | Eventos con fecha y hora | H10, H12 | Fig. 17 |
+| 8 | Tres contraseñas incorrectas y `show login` | Quiet-Mode activo | H11 | Fig. 18 |
 
-![Figura 13 · SSH versión 2 y CDP](images/capturas/13-ssh-version2-cdp.png)
-*Figura 13 · SSH versión 2 y CDP desactivado en R1.*
+<br>
 
-![Figura 14 · Política del firewall](images/capturas/14-politica-firewall-curl-nc.png)
-*Figura 14 · Política de FW1: HTTPS permitido y SSH hacia Internet sin respuesta.*
+<div align="center">
+  <img src="images/capturas/11-nmap-puertos.png" alt="nmap" width="700">
+  <p><i>Figura 11 · Puertos abiertos en R1 y SW1.</i></p>
+</div>
 
-![Figura 15 · Política de contraseñas](images/capturas/15-politica-contrasenas-fortigate.png)
-*Figura 15 · Política de contraseñas exigida por FW1.*
+<div align="center">
+  <img src="images/capturas/12-telnet-rechazado.png" alt="Telnet rechazado" width="700">
+  <p><i>Figura 12 · Telnet rechazado por R1.</i></p>
+</div>
 
-![Figura 16 · Bloqueo y hosts de confianza](images/capturas/16-lockout-trusthost-fortigate.png)
-*Figura 16 · Bloqueo del administrador y hosts de confianza en FW1.*
+<div align="center">
+  <img src="images/capturas/13-ssh-version2-cdp.png" alt="SSH versión 2 y CDP" width="700">
+  <p><i>Figura 13 · SSH versión 2 y CDP desactivado en R1.</i></p>
+</div>
 
-![Figura 17 · Logs con fecha y hora](images/capturas/17-logs-timestamps.png)
-*Figura 17 · Logs con fecha y hora en R1.*
+<div align="center">
+  <img src="images/capturas/14-politica-firewall-curl-nc.png" alt="Política del firewall" width="700">
+  <p><i>Figura 14 · Política de FW1: HTTPS permitido y SSH hacia Internet sin respuesta.</i></p>
+</div>
 
-![Figura 18 · Quiet-Mode](images/capturas/18-quiet-mode-r1.png)
-*Figura 18 · R1 en Quiet-Mode tras intentos fallidos.*
+<div align="center">
+  <img src="images/capturas/15-politica-contrasenas-fortigate.png" alt="Política de contraseñas" width="700">
+  <p><i>Figura 15 · Política de contraseñas exigida por FW1.</i></p>
+</div>
+
+<div align="center">
+  <img src="images/capturas/16-lockout-trusthost-fortigate.png" alt="Bloqueo y hosts de confianza" width="700">
+  <p><i>Figura 16 · Bloqueo del administrador y hosts de confianza en FW1.</i></p>
+</div>
+
+<div align="center">
+  <img src="images/capturas/17-logs-timestamps.png" alt="Logs con fecha y hora" width="700">
+  <p><i>Figura 17 · Logs con fecha y hora en R1.</i></p>
+</div>
+
+<div align="center">
+  <img src="images/capturas/18-quiet-mode-r1.png" alt="Quiet-Mode" width="700">
+  <p><i>Figura 18 · R1 en Quiet-Mode tras intentos fallidos.</i></p>
+</div>
+
+<div align="center">
+  <img src="images/capturas/18-quiet-mode-r1.png" alt="Quiet-Mode" width="700">
+  <p><i>Figura 18 · R1 en Quiet-Mode tras intentos fallidos.</i></p>
+</div>
 
 Las configuraciones finales exportadas están en [`configs/running-config`](configs/running-config).
 
