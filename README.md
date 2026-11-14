@@ -24,7 +24,7 @@ Autora: Lisbeth Gomez · Matrícula: 2025-0701
 
 <h3 style="color: #ffffff; margin-bottom: 15px;">📹 Video demostrativo</h3>
 
-<a href="https://youtu.be/6xq6ZDsvlI0" target="_blank">
+<a href="https://youtu.be/6xg6ZDsyll0" target="_blank">
 <img src="https://img.shields.io/badge/▶_Ver_Video_Demostrativo_en_YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Video">
 </a>
 
