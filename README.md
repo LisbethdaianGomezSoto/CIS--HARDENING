@@ -1,12 +1,37 @@
-# 🛡️ Hardening de Redes con CIS Benchmark: Router, Switch y Firewall en GNS3
+<table align="center" style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 10px; padding: 30px; width: 100%; border-collapse: collapse;">
+  <tr>
+    <td align="center">
 
-**Autora:** Lisbeth Gómez · **Matrícula:** 2025-0701
+      <h1 style="color: #ffffff; margin-bottom: 10px;">🛡️ Hardening de Redes con CIS Benchmark</h1>
+      
+      <p style="color: #c9d1d9; font-size: 16px; margin-bottom: 20px;">
+        <b>Router, Switch y Firewall en GNS3</b>
+      </p>
 
----
+      <p style="color: #8b949e; font-size: 14px; margin-bottom: 30px;">
+        Autora: Lisbeth Gomez · Matrícula: 2025-0701
+      </p>
 
-## 🎥 Video demostrativo
+      <p>
+        <img src="https://img.shields.io/badge/CISCO-IOS-00BFFF?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco">
+        <img src="https://img.shields.io/badge/FORTIGATE-Firewall-EE3124?style=for-the-badge&logo=fortinet&logoColor=white" alt="FortiGate">
+        <img src="https://img.shields.io/badge/GNS3-Laboratorio-brightgreen?style=for-the-badge" alt="GNS3">
+        <img src="https://img.shields.io/badge/PYTHON-Script-yellow?style=for-the-badge&logo=python&logoColor=black" alt="Python">
+        <img src="https://img.shields.io/badge/CIS-Benchmark-blueviolet?style=for-the-badge" alt="CIS">
+      </p>
 
-https://youtu.be/6xg6ZDsyll0
+      <br>
+
+      <h3 style="color: #ffffff; margin-bottom: 15px;">📹 Video demostrativo</h3>
+      
+      <a href="https://youtu.be/6xq6ZDsvlI0" target="_blank">
+        <img src="https://img.shields.io/badge/▶_Ver_Video_Demostrativo_en_YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Video">
+      </a>
+
+    </td>
+  </tr>
+</table>
+
 
 ---
 
