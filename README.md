@@ -1,36 +1,51 @@
-<table align="center" style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 10px; padding: 30px; width: 100%; border-collapse: collapse;">
-<tr>
-<td align="center">
+<div style="background-color: #0d1117; padding: 30px 20px; border-radius: 10px;">
 
-<h1 style="color: #ffffff; margin-bottom: 10px;">🛡️ Hardening de Redes con CIS Benchmark</h1>
+  <!-- 1. EL BANNER -->
+  <div align="center" style="margin-bottom: 0;">
+    <img src="images/banner-hardening.png" alt="Banner Hardening" style="width: 100%; max-width: 900px; height: 220px; object-fit: cover; border-radius: 6px 6px 0 0; display: block; margin: 0 auto;">
+  </div>
 
-<p style="color: #c9d1d9; font-size: 16px; margin-bottom: 20px;">
-<b>Router, Switch y Firewall en GNS3</b>
-</p>
+  <!-- 2. LA LÍNEA DE COLOR DEBAJO DEL BANNER -->
+  <div style="height: 4px; background: linear-gradient(90deg, #00e5ff, #ff00ff); width: 100%; max-width: 900px; margin: 0 auto 25px auto;"></div>
 
-<p style="color: #8b949e; font-size: 14px; margin-bottom: 30px;">
-Autora: Lisbeth Gomez · Matrícula: 2025-0701
-</p>
+  <!-- 3. EL TÍTULO -->
+  <h1 align="center" style="color: #ffffff; margin-bottom: 10px; font-weight: 600; font-size: 26px;">
+    🛡️ Hardening de Redes con CIS Benchmark
+  </h1>
 
-<p>
-<img src="https://img.shields.io/badge/CISCO-IOS-00BFFF?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco">
-<img src="https://img.shields.io/badge/FORTIGATE-Firewall-EE3124?style=for-the-badge&logo=fortinet&logoColor=white" alt="FortiGate">
-<img src="https://img.shields.io/badge/GNS3-Laboratorio-brightgreen?style=for-the-badge" alt="GNS3">
-<img src="https://img.shields.io/badge/PYTHON-Script-yellow?style=for-the-badge&logo=python&logoColor=black" alt="Python">
-<img src="https://img.shields.io/badge/CIS-Benchmark-blueviolet?style=for-the-badge" alt="CIS">
-</p>
+  <!-- 4. EL SUBTÍTULO (Ya sin fondo gris, solo el texto resaltado) -->
+  <p align="center" style="color: #00e5ff; font-size: 16px; margin-bottom: 10px;">
+    <b>Router, Switch y Firewall en GNS3</b>
+  </p>
+
+  <!-- 5. DATOS DE LA AUTORA -->
+  <p align="center" style="color: #8b949e; font-size: 13px; margin-bottom: 25px;">
+    Autora: Lisbeth Gomez · Matrícula: 2025-0701
+  </p>
+
+  <!-- 6. LOS BADGES -->
+  <div align="center" style="margin-bottom: 30px;">
+    <img src="https://img.shields.io/badge/CISCO-IOS-00e5ff?style=for-the-badge&logo=cisco&logoColor=black" alt="Cisco">
+    <img src="https://img.shields.io/badge/FORTIGATE-Firewall-ff00ff?style=for-the-badge&logo=fortinet&logoColor=white" alt="FortiGate">
+    <img src="https://img.shields.io/badge/GNS3-Laboratorio-00e5ff?style=for-the-badge" alt="GNS3">
+    <img src="https://img.shields.io/badge/PYTHON-Script-ff00ff?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+    <img src="https://img.shields.io/badge/CIS-Benchmark-00e5ff?style=for-the-badge" alt="CIS">
+  </div>
+
+  <br>
+
+  <!-- 7. EL BOTÓN DEL VIDEO (Estilo Badge Cian con ícono de Play) -->
+  <h3 align="center" style="color: #ffffff; margin-bottom: 15px; font-size: 18px;">📹 Video demostrativo</h3>
+  
+  <div align="center" style="margin-bottom: 20px;">
+    <a href="https://youtu.be/6xg6ZDsyll0" target="_blank">
+      <img src="https://img.shields.io/badge/▶_VER_VIDEO_DEMOSTRATIVO-00e5ff?style=for-the-badge&logoColor=black" alt="Video">
+    </a>
+  </div>
+
+</div>
 
 <br>
-
-<h3 style="color: #ffffff; margin-bottom: 15px;">📹 Video demostrativo</h3>
-
-<a href="https://youtu.be/6xg6ZDsyll0" target="_blank">
-<img src="https://img.shields.io/badge/▶_Ver_Video_Demostrativo_en_YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Video">
-</a>
-
-</td>
-</tr>
-</table>
 
 
 ## 📑 Índice de Contenido
