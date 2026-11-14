@@ -32,6 +32,29 @@ Autora: Lisbeth Gomez · Matrícula: 2025-0701
 </tr>
 </table>
 
+
+## 📑 Índice de Contenido
+
+- [1. Descripción general](#1-descripción-general)
+- [2. Propósito del laboratorio](#2-propósito-del-laboratorio)
+- [3. Objetivos](#3-objetivos)
+- [4. Tecnologías y herramientas](#4-tecnologías-y-herramientas)
+- [5. Arquitectura y topología de red](#5-arquitectura-y-topología-de-red)
+- [6. Diagrama de la infraestructura](#6-diagrama-de-la-infraestructura)
+- [7. Direccionamiento IP](#7-direccionamiento-ip)
+- [8. Metodología de trabajo](#8-metodología-de-trabajo)
+- [9. Conexión inicial de los equipos](#9-conexión-inicial-de-los-equipos)
+- [10. CIS Benchmark seleccionados](#10-cis-benchmark-seleccionados)
+- [11. Medidas de hardening aplicadas](#11-medidas-de-hardening-aplicadas)
+- [12. Descripción de los scripts](#12-descripción-de-los-scripts)
+- [13. Instrucciones de instalación y ejecución](#13-instrucciones-de-instalación-y-ejecución)
+- [14. Auditoría inicial](#14-auditoría-inicial)
+- [15. Resultados de las auditorías](#15-resultados-de-las-auditorías)
+- [16. Comparación antes y después](#16-comparación-antes-y-después)
+- [17. Evidencias de las pruebas](#17-evidencias-de-las-pruebas)
+- [18. Conclusiones](#18-conclusiones)
+- [19. Referencias y fuentes oficiales](#19-referencias-y-fuentes-oficiales)
+
 ---
 
 
