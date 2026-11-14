@@ -232,18 +232,17 @@ Los informes se guardan en `reports/` (HTML y JSON) y los respaldos en `backups/
 ```
 CIS-Hardening-GNS3/
 ├── README.md
-├── docs/            Documentación del laboratorio
+├── docs/                Documentación del laboratorio
 ├── images/
-│   ├── diagramas/   Topología y flujo del script
-│   └── capturas/    Evidencias numeradas
+│   ├── diagramas/       Topología y flujo del script
+│   └── capturas/        Evidencias visuales (Figuras 01 a 18)
 ├── configs/
-│   ├── initial/     Configuración inicial de cada equipo
-│   └── running-config/  Configuración final exportada
-├── scripts/         Script de auditoría y hardening
-├── reports/
-│   ├── before/      Informes de la auditoría inicial
-│   └── after/       Informes posteriores al hardening
-└── evidence/        Salidas de las pruebas
+│   ├── initial/         Configuración inicial (R1, SW1, FW1)
+│   └── running-config/  Configuración final (R1, SW1, FW1)
+├── scripts/             Script de auditoría (cis_hardening.py)
+└── reports/
+    ├── before/          Reportes de la auditoría inicial (PDF y HTML)
+    └── after/           Reportes post-hardening (PDF y HTML)
 ```
 
 ## 14. Auditoría inicial
