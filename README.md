@@ -394,6 +394,21 @@ Las configuraciones finales exportadas están en [configs/running-config](https:
 - Un informe al 100 % solo refleja lo que se mide: la comprobación con nmap detectó un puerto abierto que el script aún no cubría y permitió ampliarlo.
 - El alcance se limita a las recomendaciones seleccionadas; no sustituye una auditoría CIS completa.
 
+### ⚠️ Análisis de Incidencias y Lecciones Aprendidas
+
+<div style="background-color: #161b22; border-left: 4px solid #d29922; padding: 15px; border-radius: 4px; margin-top: 15px; margin-bottom: 25px;">
+  <p style="color: #c9d1d9; margin-top: 0;">
+    Durante la fase de auditoría final, el script de Python experimentó un error de tipo <em>timeout</em> al intentar leer el prompt del Switch SW1. Esto ocurrió debido a la latencia del entorno virtualizado en GNS3 al procesar comandos largos.
+  </p>
+  <p style="color: #c9d1d9; margin-bottom: 0;">
+    Lejos de ser un fallo del hardening, esta incidencia demostró la importancia crítica de implementar manejo de excepciones y tiempos de espera robustos en la automatización de redes. Para validar la seguridad del Switch, se realizó una verificación manual exitosa de los 13 controles, confirmando que la configuración aplicada es correcta. 
+  </p>
+  <p style="color: #c9d1d9; margin-bottom: 0; margin-top: 10px; font-size: 13px;">
+    <b>💡 Mejora futura:</b> Se propone ajustar el parámetro <code>read_timeout</code> en la librería Netmiko dentro del script para entornos con recursos limitados.
+  </p>
+</div>
+
+
 ## 19. Referencias y fuentes oficiales
 
 - Center for Internet Security, CIS Benchmarks: https://www.cisecurity.org/cis-benchmarks
